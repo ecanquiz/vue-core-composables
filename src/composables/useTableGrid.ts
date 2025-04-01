@@ -1,4 +1,4 @@
-import { useRouter, useRoute } from 'vue-router'
+//import { useRouter, useRoute } from 'vue-router'
 import type { RouteLocationNormalizedLoaded, Router } from 'vue-router'
 
 interface Data {
@@ -18,9 +18,9 @@ interface TableGrid {
   setSort: (s: "asc" | "des") => void;
 }
 
-export default (data: Data, path: string): TableGrid => {
-  const router = useRouter()
-  const route = useRoute()
+export default function (data: Data, path: string, router: Router, route: RouteLocationNormalizedLoaded): TableGrid {
+ // const router = useRouter()
+ // const route = useRoute()
 
   // search
   let searchDebounceTimer: ReturnType<typeof setTimeout> // NodeJS.Timeout

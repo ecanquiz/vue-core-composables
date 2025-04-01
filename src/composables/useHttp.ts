@@ -1,7 +1,7 @@
 import { ref } from 'vue'
-import { getError } from "@/core/utils/helpers";
+import { getError } from "../core/utils/helpers";
 
-export default () => {
+export default function ()  {
   const sending = ref(false)
   const loading = ref(false)
   const pending = ref(false)

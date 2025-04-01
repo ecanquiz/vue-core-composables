@@ -6,7 +6,7 @@ const state = reactive({
 });
 
 
-export function useSidebar() {
+export default function (){
   return {
     ...toRefs(state),
   };
